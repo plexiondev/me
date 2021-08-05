@@ -18,6 +18,12 @@ body {
     padding: 30px;
 }
 
+/* focus */
+*:focus {
+    border: none;
+    outline: 2px solid var(--accent);
+}
+
 /* detect and change theme based on system */
 @media (prefers-color-scheme: light) {
     :root {
@@ -54,6 +60,11 @@ h1, h2, h3, h4, h5, h6, .h1 {
     color: var(--head);
     margin: 5px 0;
 }
+/* text alt */
+.alt {
+    color: var(--over);
+    font-size: 14px;
+}
 /* anchors/links */
 a, .link {
     text-decoration: none;
@@ -77,25 +88,23 @@ a:hover, .link:hover {
     margin: 5px 0;
 }
 
-/* define text sizes */
-
 /* gap div */
 .g {
-    height: 50px;
+    height: 30px;
 }
 
 /* support icon */
 .icon {
     line-height: 24px;
 }
-.icon i.material-icons {
+.icon i.material-icons, .icon i.material-icons-round {
     position: relative;
     top: 6px;
     margin-right: 20px;
 }
 .icon i.fab.support {
     position: relative;
-    top: 3px;
+    top: 2px;
     font-size: 22px;
     margin-right: 20px;
 }
@@ -108,9 +117,17 @@ img.act-icon {
     margin-right: 20px;
 }
 
+/* icon list */
 ul.ico li {
     margin: 10px 0;
     height: 30px;
+}
+/* one-line list */
+ul.one {
+    margin: 10px 0;
+}
+ul.one li {
+    display: inline;
 }
 
 /* logo */
@@ -151,4 +168,46 @@ img.pfp {
 }
 img.small {
     width: 48px;
+}
+/* link profile */
+a.pfp.small {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    border-radius: 50%;
+}
+a.pfp-link {
+    position: relative;
+}
+a.pfp-link i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    opacity: 0;
+    color: white;
+}
+/* upon hover */
+a.pfp-link:hover, a.pfp-link:focus {
+    background: #000000;
+}
+a.pfp-link:hover img, a.pfp-link:focus img {
+    opacity: 0.5;
+}
+a.pfp-link:hover i, a.pfp-link:focus i {
+    opacity: 1;
+}
+
+/* user embed */
+.user {
+    display: flex;
+}
+.user .pfp {
+    margin-right: 5px;
+}
+.user .acc {
+    display: flex;
+    align-items: center;
+}
+.user .acc h1 {
+    margin: 0 0 2px 0;
 }
