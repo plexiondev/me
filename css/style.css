@@ -37,6 +37,10 @@ body {
         --accent: #3D5FF1;
         --accent-back: #3D5FF130;
     }
+    /* change outline icon colours */
+    img.act-icon.outline {
+        filter: brightness(0);
+    }
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -49,6 +53,10 @@ body {
         /* define accent colours */
         --accent: #3D5FF1;
         --accent-back: #3D5FF120;
+    }
+    /* change outline icon colours */
+    img.act-icon.outline {
+        filter: brightness(5);
     }
 }
 
@@ -70,7 +78,7 @@ a, .link {
     text-decoration: none;
     color: var(--text);
 }
-a:hover, .link:hover {
+a:hover, .link:hover, a:focus, .link:focus {
     color: var(--head);
 }
 /* overline text */
@@ -141,15 +149,15 @@ ul.one li {
 /* hide by default */
 .next .wordmark {
     position: relative;
-    left: -40px;
+    left: -60px;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.35s;
     color: var(--head);
 }
 .next .ico {
     position: relative;
-    left: -40px;
-    transition: 0.3s;
+    left: -60px;
+    transition: 0.35s;
 }
 /* show upon hover */
 .next:hover .wordmark, .next:hover .ico, .next:focus-within .wordmark, .next:focus-within .ico {
