@@ -4,6 +4,8 @@
 
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* brand font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* backup code font (for non-windows devices) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
@@ -14,6 +16,8 @@ body {
     /* use the specified theme */
     background: var(--back);
     color: var(--text);
+}
+.app {
     /* apply padding */
     padding: 30px;
 }
@@ -40,6 +44,9 @@ body {
     /* change outline icon colours */
     img.act-icon.outline {
         filter: brightness(0);
+    }
+    .inner {
+        box-shadow: -15px 15px 0px 0px #003BFF;
     }
 }
 @media (prefers-color-scheme: dark) {
@@ -123,6 +130,7 @@ img.act-icon {
     width: 24px;
     height: 24px;
     margin-right: 20px;
+    font-size: 0;
 }
 
 /* icon list */
@@ -133,9 +141,17 @@ ul.ico li {
 /* one-line list */
 ul.one {
     margin: 10px 0;
+    display: flex;
+    justify-content: center;
 }
-ul.one li {
-    display: inline;
+.on-one>ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+}
+ul.one .icon * {
+    margin: 0 10px !important;
+    top: 0 !important;
 }
 
 /* logo */
@@ -149,14 +165,14 @@ ul.one li {
 /* hide by default */
 .next .wordmark {
     position: relative;
-    left: -60px;
+    left: -40px;
     opacity: 0;
     transition: 0.35s;
     color: var(--head);
 }
 .next .ico {
     position: relative;
-    left: -60px;
+    left: -40px;
     transition: 0.35s;
 }
 /* show upon hover */
@@ -218,4 +234,47 @@ a.pfp-link:hover i, a.pfp-link:focus i {
 }
 .user .acc h1 {
     margin: 0 0 2px 0;
+}
+
+/* Full page */
+.full {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* Scroll indicator */
+.full .scroll {
+    position: absolute;
+    bottom: 10vh;
+}
+.scroll i {
+    font-size: 32px;
+    transition: 0.2s;
+}
+.scroll.true i {
+    transform: rotate(180deg);
+    opacity: 0.2;
+}
+
+/* plexion2021 Brand Rendering */
+.brand {
+    font-family: 'Poppins';
+    text-shadow: -8px 8px 0px #003BFF;
+    font-size: 84px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.inner {
+    background: #000000;
+    padding: 50px;
+    --head: #FFFFFF;
+    --text: #ffffffe1;
+    --over: #ffffff71;
+}
+.inner img.act-icon.outline {
+    filter: brightness(5);
 }

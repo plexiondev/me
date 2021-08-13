@@ -20,10 +20,10 @@
     <!-- define general metadata for facebook etc. -->
     <meta property="og:site_name" content="landing >>">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://plexion.dev/landing">
+    <meta property="og:url" content="https://plexion.dev/me">
     <meta property="og:title" content="landing >>">
     <meta property="og:description" content="next generation">
-    <meta property="og:image" content="https://plexion.dev/landing/img/embed.png">
+    <meta property="og:image" content="https://plexion.dev/me/img/embed.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- define theme header colour when supported by browser -->
@@ -32,7 +32,7 @@
     <!-- define ios webapp support -->
     <link rel="apple-touch-icon" href="img/app.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="manifest" href="https://plexion.dev/landing/etc/site.webmanifest">
+    <link rel="manifest" href="https://plexion.dev/me/etc/site.webmanifest">
 
     <!-- import stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
@@ -40,61 +40,85 @@
     <!-- icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <script src="https://kit.fontawesome.com/20a071237e.js" crossorigin="anonymous"></script>
+
+    <!-- import js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
 </head>
 <body>
-    <div class="next h1">
-        <a class="wordmark" href="/landing">landing</a>
-        <span class="code ico">>></span>
+    <div class="full">
+        <div class="inner">
+            <h1 class="brand">plexion</h1>
+            <br>
+            <br>
+            <br>
+            <ul class="one">
+                <li><a href="https://youtube.com/plexion" class="icon" target="_blank"><i class="fab fa-youtube support"></i></a></li>
+                <li><a href="https:/twitch.tv/plexionLIVE" class="icon" target="_blank"><i class="fab fa-twitch support"></i></a></li>
+                <li><a href="https://twitter.com/plexionlive" class="icon" target="_blank"><i class="fab fa-twitter support"></i></a></li>
+                <li><a href="https://github.com/plexiondev" class="icon" target="_blank"><i class="fab fa-github support"></i></a></li>
+                <li><a href="mailto:next@plexion.dev" class="icon" target="_blank"><i class="material-icons support">mail</i></a></li>
+                <li><a href="https://osu.ppy.sh/u/plexion" class="icon" target="_blank"><img style="transform: scale(1.1);" src="https://i.ppy.sh/84650abbb8bc7fcbfa58f6941ac6c2d00ef4a5bd/68747470733a2f2f6f73752e7070792e73682f77696b692f696d616765732f4272616e645f6964656e746974795f67756964656c696e65732f696d672f75736167652d73696e676c652d636f6c6f75722e706e67" class="act-icon outline"></a></li>
+            </ul>
+        </div>
+        <div class="scroll">
+            <i class="material-icons">expand_more</i>
+        </div>
     </div>
-    <div class="g"></div>
-    <div class="user">
-        <span class="pfp">
-            <a class="pfp small pfp-link" href="https://twitter.com/plexionlive" target="_blank">
-                <img src="https://pbs.twimg.com/profile_images/1423112034628087808/yWkJUHM5_400x400.jpg" class="pfp small">
-                <i class="material-icons">open_in_new</i>
-            </a>
-        </span>
-        <span class="acc">
-            <span class="info">
-                <h1>plexion</h1>
-                <a class="alt" href="https://twitter.com/plexionlive" target="_blank">@plexionlive</a>
-            </span>
-        </span>
+    <div class="app">
+        <div class="on-one">
+            <ul>
+                <li class="on">
+                    <label class="over">me</label>
+                    <ul class="ico">
+                        <li>name : <span class="h1">cobain</span></li>
+                        <li>birthday : <span class="h1">16/12</span></li>
+                        <li>exists : <span class="h1">uk</span></li>
+                    </ul>
+                    <br>
+                    <br>
+                    <div class="user">
+                        <span class="pfp">
+                            <a class="pfp small pfp-link" href="https://twitter.com/plexionlive" target="_blank">
+                                <img src="https://pbs.twimg.com/profile_images/1423112034628087808/yWkJUHM5_400x400.jpg" class="pfp small">
+                                <i class="material-icons">open_in_new</i>
+                            </a>
+                        </span>
+                        <span class="acc">
+                            <span class="info">
+                                <h1>plexion</h1>
+                                <a class="alt" href="https://twitter.com/plexionlive" target="_blank">@plexionlive</a>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="g"></div>
+                </li>
+                <li class="on">
+                    <label class="over">projects</label>
+                    <ul class="ico">
+                        <li><a href="https://plexion.dev" class="icon" target="_blank"><i class="material-icons support">public</i>plexion.dev</a></li>
+                        <li><a href="https://l.plexion.dev/eventsbot" class="icon" target="_blank"><i class="material-icons support">emoji_events</i>events-bot (<i class="fab fa-discord"></i>)</a></li>
+                        <li><a href="https://l.plexion.dev/simpledarkbd" class="icon" target="_blank"><i class="material-icons support">palette</i>simple-dark-theme (<i class="fab fa-discord"></i>)</a></li>
+                    </ul>
+                    <div class="g"></div>
+                </li>
+                <li class="on">
+                    <label class="over">minecraft</label>
+                    <ul class="ico">
+                        <li><a href="https://l.plexion.dev/voidrising" class="icon" target="_blank"><i class="material-icons support">code</i>void rising</a></li>
+                        <li><a href="https://l.plexion.dev/lavarising" class="icon" target="_blank"><i class="material-icons support">code</i>lava rising</a></li>
+                        <li><a href="https://l.plexion.dev/uhc" class="icon" target="_blank"><i class="material-icons support">code</i>uhc</a></li>
+                        <li><a href="https://l.plexion.dev/simpledark" class="icon" target="_blank"><i class="material-icons support">invert_colors</i>simple dark</a></li>
+                        <li><a href="https://plexion.dev/library" class="icon" target="_blank"><i class="material-icons-round support">auto_stories</i>full library</a></li>
+                    </ul>
+                    <div class="g"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="g"></div>
+        <div class="g"></div>
+        <footer>
+            <p>powered by plexion.dev, 2021</p>
+        </footer>
     </div>
-    <br>
-    <ul class="one">
-        <li><a href="https://youtube.com/plexion" class="icon" target="_blank"><i class="fab fa-youtube support"></i></a></li>
-        <li><a href="https:/twitch.tv/plexionLIVE" class="icon" target="_blank"><i class="fab fa-twitch support"></i></a></li>
-        <li><a href="https://twitter.com/plexionlive" class="icon" target="_blank"><i class="fab fa-twitter support"></i></a></li>
-        <li><a href="https://github.com/plexiondev" class="icon" target="_blank"><i class="fab fa-github support"></i></a></li>
-        <li><a href="mailto:next@plexion.dev" class="icon" target="_blank"><i class="material-icons support">mail</i></a></li>
-        <li><a href="https://osu.ppy.sh/u/plexion" class="icon" target="_blank"><img style="transform: scale(1.1);" src="https://i.ppy.sh/84650abbb8bc7fcbfa58f6941ac6c2d00ef4a5bd/68747470733a2f2f6f73752e7070792e73682f77696b692f696d616765732f4272616e645f6964656e746974795f67756964656c696e65732f696d672f75736167652d73696e676c652d636f6c6f75722e706e67" class="act-icon outline"></a></li>
-    </ul>
-    <br>
-    <label class="over">me</label>
-    <ul class="ico">
-        <li>name : <span class="h1">cobain</span></li>
-        <li>birthday : <span class="h1">16/12</span></li>
-        <li>exists : <span class="h1">uk</span></li>
-    </ul>
-    <div class="g"></div>
-    <label class="over">projects</label>
-    <ul class="ico">
-        <li><a href="https://plexion.dev" class="icon" target="_blank"><i class="material-icons support">public</i>plexion.dev</a></li>
-        <li><a href="https://l.plexion.dev/eventsbot" class="icon" target="_blank"><i class="material-icons support">emoji_events</i>events-bot (<i class="fab fa-discord"></i>)</a></li>
-        <li><a href="https://l.plexion.dev/simpledarkbd" class="icon" target="_blank"><i class="material-icons support">palette</i>simple-dark-theme (<i class="fab fa-discord"></i>)</a></li>
-    </ul>
-    <div class="g"></div>
-    <label class="over">minecraft</label>
-    <ul class="ico">
-        <li><a href="https://l.plexion.dev/voidrising" class="icon" target="_blank"><i class="material-icons support">code</i>void rising</a></li>
-        <li><a href="https://l.plexion.dev/lavarising" class="icon" target="_blank"><i class="material-icons support">code</i>lava rising</a></li>
-        <li><a href="https://l.plexion.dev/uhc" class="icon" target="_blank"><i class="material-icons support">code</i>uhc</a></li>
-        <li><a href="https://l.plexion.dev/simpledark" class="icon" target="_blank"><i class="material-icons support">invert_colors</i>simple dark</a></li>
-        <li><a href="https://plexion.dev/library" class="icon" target="_blank"><i class="material-icons-round support">auto_stories</i>full library</a></li>
-    </ul>
-    <div class="g"></div>
-    <footer>
-        <p>powered by plexion.dev, 2021</p>
-    </footer>
 </body>
