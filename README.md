@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://plexion.dev/next/img/standalone.png">
+  <img src="https://plexion.dev/me/img/standalone.png">
 </p>
 
 # next
 
-**next** ([plexion.dev/next](https://plexion.dev/next)) is a lightweight, simple branch from plexion.dev - being hosted on the same domain. it's main purpose for now is to act as a un-obtrusive and simple host for my socials, bio and some of my projects.
+**next** ([plexion.dev/me](https://plexion.dev/me)) is a lightweight, simple branch from plexion.dev - being hosted on the same domain. it's main purpose for now is to act as a un-obtrusive and simple host for my socials, bio and some of my projects.
 
 <img src="https://plexion.s-ul.eu/R72WrG5j">
 
@@ -15,3 +15,5 @@ it will also hook in with your system and detect what colour theme you are runni
 ## why 'next'?
 
 the name is inspired from [osu!next](https://osunext.tumblr.com/) but has no actual meaning besides being a name. it could be changed in the future but if it works there's no point changing it.
+
+it's now called **me**, referring to it basically just being a landing page for my socials. some references to "next" can still be found (for example, right here) though.
